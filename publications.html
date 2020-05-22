@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title></title>
+   <link rel="stylesheet" type="text/css" href="style.css">
+   <script src="https://kit.fontawesome.com/9ceb65734c.js" crossorigin="anonymous"></script> <!-- Font Awesome stuff for hamburger icon -->
+
+   <script src="jquery-3.5.0.min.js"></script> <!-- Required for abstract hidden text-->
+  </head>
+
+  <script src = "myJavaScripts.js"></script>
+
+  <body>
+
+    <header class="header">
+      <div class = "top">
+        <p> Amanda R. Hart </p> 
+      </div>
+      <div class = "topnav-right" id="myTopnav">
+        <a class = "active" href = "index.html"> Home </a>
+        <a href = "about.html"> About </a> 
+        <a href = "research.html"> Research </a>
+        <a href = "publications.html"> Publications </a>
+        <a href = "blog.html"> Blog </a>
+        <a href = "contact.html"> Contact </a>
+        <a href = "javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fas fa-bars"></i>
+        </a>
+      </div>
+    </header>
+
+    <hr class="headerline">
+
+    <div id="container"> 
+	   <div id="main">
+        <!-- Page title -->
+        <h1 class="extraspace"> Publications </h1> 
+
+        <!-- Beginning here is the content section -->
+        
+        <h2> Journal publications </h2>
+
+        <hr class="whitespace">
+
+        <div> <p><b>Hart, A.R.</b>, Fay, G. 2020. Applying tree analysis to assess combinations of Ecosystem-Based Fisheries Management actions in Management Strategy Evaluation. Fisheries Research, 225, p. 105466. </p>
+        </div>
+        <hr class="smallwhitespace">
+        <a href="#" onclick="$('#hiddenText').show(); return false;" style="color: grey;">&#8212 Full Abstract &#8212</a> 
+
+        <div style="display: none;" id="hiddenText"><p style="color: grey;"> 
+          <hr class="smallwhitespace">
+          <p>There is growing need to evaluate the performance of possible Ecosystem-Based Fisheries Management (EBFM) procedures to develop feasible operational alternatives to single species management. We used Management Strategy Evaluation (MSE) to examine consequences of implementing combinations of three EBFM actions and used tree analysis to assess drivers of management performance. We used a multi-species production model, characteristic of the commercial finfish fishery on Georges Bank, USA, and included observation error when assessing stock and ecosystem status. Combinations of catch ceilings that limited total system removals, indicator-based harvest control rules that adjusted fishing at the aggregate or ecosystem level, and precautionary single-species fishing mortality rates were implemented in tandem over a thirty-year projection period. Statistical tree analysis identified EBFM procedures capable of meeting combinations of catch, biomass, biodiversity, and economic goals, but we found catch ceilings tended to mask the impact of other EBFM actions. It was necessary to implement two or more EBFM actions combining broad-scale limitations on removals with management actions targeting vulnerable ecosystem components to address trade-offs between potentially conflicting management objectives. 
+          <a href = "https://www.sciencedirect.com/science/article/abs/pii/S0165783619303212" style="color: black;">&#8212 See full text here &#8212</a>
+          </p>
+        </div>
+
+
+        <hr class="whitespace">
+        <hr class="whitespace">
+
+        <h2> Technical reports </h2>
+
+        <hr class="whitespace">
+
+        <p>NEFMC. 2018. Management Strategy Evaluation User Guide (Appendix V). In: NEFMC .2018. Amendment 8 to the Atlantic Herring Fishery Management Plan, including a Draft Environmental Impact Statement (DEIS). Volume II - Appendices. (Contributions by G.Fay and <b>A.R. Hart</b>). Prepared for the September 2018 meeting of the New England Fishery Management Council. 303p. </p>
+
+        <hr class="whitespace">
+        
+        <p> Wildermuth, R., Cadrin, S., Fay, G., Cummings, J., Hansell, A., Haugen, J., <b>Hart, A.R.,</b> Morse, M., Wright, B. 2018. Technical Minutes of the Review Group for Arctic Fish Stocks (RGARWG) in Review of ICES Arctic Fisheries Working Group (AFWG) Report 2018.</p>
+
+        <hr class="whitespace">
+
+        <p>Deroba, J.J., Fay, G., Weston, A.E., <b>Hart, A.R.</b> 2018. A Stock Synthesis model for Atlantic herring. In: Deroba, J.J. 2018. Atlantic herring operational assessment report. 2018. US Department of Commerce, Northeast Fisheries Science Center. 22 pp.</p>
+
+        <hr class="whitespace">
+
+        <p> <b>Hart, A.R.,</b> Fay, G., Boelke, D. 2017. Draft impacts of Amendment 8 ABC control rule alternatives. Report to the September 2017 New England Fishery Management Council Atlantic Herring Advisory Panel and Herring Committee. 108 pp. </p>
+
+        <hr class="whitespace">
+
+        <p> Wright B., Cadrin, S.X., Fay, G., Calabrese, N., Hansell, A., <b>Hart, A.R.,</b> Horton, L., Rosellon-Druker, J., Weston, A.E., Wildermuth, R., Winton, M. 2017. Technical Minutes of the Review Group for Celtic Sea Stocks (RGCS). ICES CM 2017/ACOM:13. </p>
+
+
+        <hr class="division">
+        <img src="images/Ship_passing_Chittenden_Locks_Seattle.jpg" alt="Crab boat passing throught the Chittenden Locks, Seattle Washington"  style = "width: 100%;" align="center"> 
+
+
+      </div>
+    </div>
+
+    <br>
+
+    <footer id="footer">
+	   <!-- Footer section -->
+      <div id="footer">
+      <a href="https://twitter.com/ahartofthesea?"><img src="images/Twitter_Logo_WhiteOnImage.png" alt="twitter logo" width="50" height="50"></a>   <a href="https://github.com/ahart1?"><img src="images/GitHub-Mark-Light-120px-plus.png" alt="GitHub logo" width="35" height="35"></a>      <a href="https://scholar.google.com/citations?user=9Ea9PWwAAAAJ&hl=en&oi=sra"><img src="images/logo_googlescholar.png" alt="GitHub logo" width="35" height="35"></a>   <a href="https://www.researchgate.net/profile/Amanda_Hart4"><img src="images/logo_researchgate.png" alt="Research gate logo" width="40" height="40"></a>
+      <p> Website authored by Amanda R. Hart </p>
+      </div>
+    </footer> 
+
+  </body>
+</html>

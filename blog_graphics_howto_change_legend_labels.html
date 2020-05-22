@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <title></title>
+     <link rel="stylesheet" type="text/css" href="style.css">
+     <script src="https://kit.fontawesome.com/9ceb65734c.js" crossorigin="anonymous"></script> <!-- Font Awesome stuff for hamburger icon -->
+  </head>
+
+  <script src = "myJavaScripts.js"></script>
+
+  <body>
+
+    <header class="header">
+      <div class = "top">
+        <p> Amanda R. Hart </p> 
+      </div>
+      <div class = "topnav-right" id="myTopnav">
+        <a class = "active" href = "index.html"> Home </a>
+        <a href = "about.html"> About </a> 
+        <a href = "research.html"> Research </a>
+        <a href = "publications.html"> Publications </a>
+        <a href = "blog.html"> Blog </a>
+        <a href = "contact.html"> Contact </a>
+        <a href = "javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fas fa-bars"></i>
+        </a>
+      </div>
+    </header>
+
+    <hr class="headerline">
+
+    <div id="containerblog"> 
+     <div id="main">
+        <!-- Page title -->
+        <h1 class="extraspaceblog"> How to change the labels for a ggplot legend </h1> 
+        <h5 style="color:grey;"> -- Published on 21 May 2020 -- </h5>
+
+        <!-- Blog navigation menu -->
+        <div class = "blognav">
+        <p>Categories:</p>
+        <hr class="division">
+          <a href = "blog_graphics.html"> Graphics in R</a>
+          <hr class="division">
+          <a href = "blog_R_examples.html"> R </a>
+          <hr class="division">
+        </div>
+
+        <!-- Beginning here is the content section -->
+        <hr class="division">
+
+        <p>The <span class="f"> scale_colour_discrete()</span> function can be used alongside ggplot to provide new names in the legend.</p>
+        <hr class="whitespace">
+        <p>To demonstrate, load a TidyTuesday dataset from 3/31/20:</p>
+        <hr class="smallwhitespace">
+
+        <code class="Rcode"> 
+            <p>
+                <span style="color:red;">library</span>(tidyverse)
+                brewer_size <- readr::read_csv(<q>https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-03-31/brewer_size.csv</q>)
+            </p>
+        </code>
+
+        <hr class="whitespace">
+        <p>Here is the initial plot of brewer numbers by brewer size over time:</p>
+        <hr class="smallwhitespace">
+
+        <code class="Rcode">
+            <p>
+                brewer_size %>% <br>
+                <span class="tab"> group_by(year) %>% </span><br>
+                <span class="tab">ggplot() +</span><br>
+                <span class="tab">geom_line(aes(y = n_of_brewers, x = year, col=brewer_size))</span><br>
+            </p>
+        </code>
+        <hr class="smallwhitespace">
+
+<!-- IMAGE HERE !!!!!!!!!!!!!!!!!!!!!!-->
+        <img src="images/blog_images/blog_graphics_howto_change_lengend_labels_figs/Fig2.png" alt="Line plot of number of brewers by brewery size"  style = "width: 100%;" align="center"> 
+
+        <hr class="whitespace">
+        <p>I wanted to ensure that the brewer_size information would be listed in plots from smallest production (zero barrels of beer) to largest production (total production). To do this I created a new column that would default to the desired order when plotted and filled it using the <span class="f">case_when()</span> function.</p>
+        <hr class="smallwhitespace">
+
+        <code class="Rcode">
+            <p>
+                updated_brewer_size <- brewer_size %>% mutate(brewer_size_ordered = case_when(brewer_size == <q>Zero Barrels</q> ~  <q>A</q>, <br>
+                brewer_size == <q>Under 1 Barrel</q> ~ <q>B</q>,<br> 
+                brewer_size == <q>1 to 1,000 Barrels</q> ~ <q>C</q>, <br>
+                brewer_size == <q>1,001 to 7,500 Barrels</q> ~ <q>D</q>,<br> 
+                brewer_size == <q>7,501 to 15,000 Barrels</q> ~ <q>E</q>,<br> 
+                brewer_size == "<q>5,001 to 30,000 Barrels</q> ~ <q>F</q>,<br> 
+                brewer_size == <q>30,001 to 60,000 Barrels</q> ~ <q>G</q>,<br> 
+                brewer_size == <q>60,001 to 100,000 Barrels</q> ~ <q>H</q>, <br>
+                brewer_size == <q>100,001 to 500,000 Barrels</q> ~ <q>I</q>, <br>
+                brewer_size == <q>500,001 to 1,000,000 Barrels</q> ~ <q>J</q>,<br> 
+                brewer_size == <q>1,000,001 to 6,000,000 Barrels</q> ~ <q>K</q>,<br>
+                brewer_size == <q>6,000,001 Barrels and Over</q> ~ <q>L</q>,<br>
+                brewer_size == <q>1,000,000 to 6,000,000 Barrels</q> ~ <q>M</q>,<br>
+                brewer_size == <q>2,000,000 to 6,000,000 Barrels</q> ~ <q>N</q>,<br>
+                brewer_size == <q>1,00,001 to 1,999,999 Barrels</q> ~ <q>O</q>,<br>
+                brewer_size == <q>Total</q> ~ <q>P</q>))
+            </p>
+        </code>
+
+        <hr class="whitespace">
+        <p>
+            <b>Note:</b> the information provided to the <span class="f">case_when() </span> function must be 2-sided where on the left you have a statement that could be passed to <span class="f">which()</span> and on the right of the <span class="f">~</span> you have the value to replace it with in the new column.
+        </p>
+        <hr class="smallwhitespace">
+        <p>
+            This solution correctly ordered my legend, but left me with uninformative labels. To return the labels to their original names I used the <span class="f">scale_colour_discrete()</span> function.
+        </p>
+        <hr class="smallwhitespace">
+
+        <code class="Rcode">
+            <p>
+                updated_brewer_size %>% <br>
+                <span class ="tab"> filter(brewer_size_ordered != <q>M</q>,<br>
+                <span class="tab2"> brewer_size_ordered != <q>N</q>,</span><br>
+                <span class="tab2"> brewer_size_ordered != <q>O</q>,</span><br>
+                <span class="tab2"> brewer_size_ordered != <q>NA</q>) %>% </span><br>
+                <span class="tab"> group_by(year) %>% </span><br>
+                <span clas="tab">ggplot() + </span><br>
+                <span class="tab">geom_line(aes(y = n_of_brewers, x = year, col=brewer_size_ordered)) + </span><br>
+                <span class="tab">scale_colour_discrete(name = <q>Brewer size</q>, labels = c(<q>Zero Barrels</q>, <q>Under 1 Barrel</q>, <q>1 to 1,000 Barrels</q>, <q>1,001 to 7,500 Barrels</q>, <q>7,501 to 15,000 Barrels</q>, <q>15,001 to 30,000 Barrels</q>, <q>30,001 to 60,000 Barrels</q>, <q>60,001 to 100,000 Barrels</q>, <q>100,001 to 500,000 Barrels</q>, <q>500,001 to 1,000,000 Barrels</q>, <q>1,000,001 to 6,000,000 Barrels</q>, <q>6,000,001 Barrels and Over</q>, <q>Total</q>))</span>
+            </p>
+        </code>
+
+        <hr class="smallwhitespace">
+<!-- IMAGE HERE !!!!!!!!!!!!!!!!!!!!!!-->
+<img src="images/blog_images/blog_graphics_howto_change_lengend_labels_figs/Fig3.png" alt="Graph showing the number of brewers by brewery size with updated legend label"  style = "width: 100%;" align="center"> 
+        
+        <hr class="whitespace">
+        <p>
+            <b>Note:</b> <span class="f">scale_colour_discrete()</span> mapped these new legend labels to the existing <span class="f">col</span> argument that specifies line color. But for plots where you use <span class="f">fill</span> to change the plot color (e.g. boxplots, histograms...) use <span class="f">scale_fill_discrete()</span> instead.
+        </p>
+
+      </div>
+    </div>
+
+    <br>
+
+    <footer id="footer">
+     <!-- Footer section -->
+      <div id="footer">
+      <a href="https://twitter.com/ahartofthesea?"><img src="images/Twitter_Logo_WhiteOnImage.png" alt="twitter logo" width="50" height="50"></a>   <a href="https://github.com/ahart1?"><img src="images/GitHub-Mark-Light-120px-plus.png" alt="GitHub logo" width="35" height="35"></a>      <a href="https://scholar.google.com/citations?user=9Ea9PWwAAAAJ&hl=en&oi=sra"><img src="images/logo_googlescholar.png" alt="GitHub logo" width="35" height="35"></a>   <a href="https://www.researchgate.net/profile/Amanda_Hart4"><img src="images/logo_researchgate.png" alt="Research gate logo" width="40" height="40"></a>
+      <p> Website authored by Amanda R. Hart </p>
+      </div>
+    </footer> 
+
+  </body>
+</html>
