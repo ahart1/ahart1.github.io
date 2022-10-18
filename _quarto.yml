@@ -1,0 +1,27 @@
+project:
+  type: website
+
+website:
+  title: "Amanda R. Hart"
+  navbar:
+    right:
+      - text: "Home"
+        file: index.qmd
+      - about.qmd
+      - research.qmd
+      - publications.qmd
+      - text: "Blog"
+        file: blog.qmd
+      - contact.qmd
+
+format:
+  html:
+    theme: litera
+    mainfont: Verdana, Arial, Helvetica, sans-serif
+    css: style.css
+    # include-after-body: footer.html # Now set up in _metadata.yml
+    page-layout: full
+   
+
+editor: visual
+

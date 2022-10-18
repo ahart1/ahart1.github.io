@@ -1,0 +1,28 @@
+---
+title: "Fisheries Facing Climate Change"
+---
+
+**Recreational floundering in the face of climate change**
+
+::: columns
+::: {.column width="50%"}
+![](images/Research_Fluke_Infographic.png "Infographic of summer flounder distributional shift and possible management impacts."){fig-align="center" width="84%"}
+:::
+
+::: {.column width="5%"}
+\
+
+```{=html}
+<!-- an empty Div (with a white space), serving as
+a column separator -->
+```
+:::
+
+::: {.column width="45%"}
+Climate change is a growing concern in coastal communities dependent on fishing, as it is likely to alter the spatial and temporal availability of targeted species, and potentially the management frameworks required to maintain sustainable fishing practices. This study seeks to quantify the impact of population movement on the recreational summer flounder fishery and explore alternative management procedures that may alleviate existing and future conflicts surrounding access to this fishery.
+:::
+:::
+
+**Climate-informed assessment modeling for American plaice**
+
+Incorporating environmental information into stock assessments has the potential to resolve retrospective patterns and improve assessment performance but is still an area of active research. I led the development of Woods Hole Assessment Model (WHAM) stock assessments for American plaice, including several climate-informed models. This work informed a recent research track assessment process for American plaice.

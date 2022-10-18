@@ -1,0 +1,101 @@
+---
+title: "Research"
+---
+
+I am broadly interested in understanding how marine ecosystems and fishery management systems interact and the consequences of changing oceans on these systems. I use computer and statistical models to explore how uncertainties influence our perception of marine systems. Check out some of my specific research focuses below!
+
+<!-- Research topic headings -->
+
+::: columns
+::: {.column width="20%"}
+#### [Management Strategy Evaluation](research_MSE.qmd)
+:::
+
+::: {.column width="5%"}
+```{=html}
+<!-- an empty Div (with a white space), serving as
+a column separator -->
+```
+:::
+
+::: {.column width="20%"}
+#### [Ecosystem-Based Fisheries Management](research_EBFM.qmd)
+:::
+
+::: {.column width="5%"}
+```{=html}
+<!-- an empty Div (with a white space), serving as
+a column separator -->
+```
+:::
+
+::: {.column width="20%"}
+#### [Fisheries Facing Climate Change](research_climate.qmd)
+:::
+
+::: {.column width="5%"}
+```{=html}
+<!-- an empty Div (with a white space), serving as
+a column separator -->
+```
+:::
+
+::: {.column width="20%"}
+#### [Supporting Fishery Decision Making](research_decision.qmd)
+:::
+
+::: {.column width="5%"}
+```{=html}
+<!-- an empty Div (with a white space), serving as
+a column separator -->
+```
+:::
+:::
+
+<!-- Research topic images -->
+
+::: columns
+::: {.column width="20%"}
+[![](images/MSE_pic1.png)](research_MSE.qmd)
+:::
+
+::: {.column width="5%"}
+```{=html}
+<!-- an empty Div (with a white space), serving as
+a column separator -->
+```
+:::
+
+::: {.column width="20%"}
+[![](images/EBFM_pic1.jpg)](research_EBFM.qmd)
+:::
+
+::: {.column width="5%"}
+```{=html}
+<!-- an empty Div (with a white space), serving as
+a column separator -->
+```
+:::
+
+::: {.column width="20%"}
+[![](images/Climate_pic1.jpg)](research_climate.qmd)
+:::
+
+::: {.column width="5%"}
+```{=html}
+<!-- an empty Div (with a white space), serving as
+a column separator -->
+```
+:::
+
+::: {.column width="20%"}
+[![](images/Decision_pic1.jpg)](research_decision.qmd)
+:::
+
+::: {.column width="5%"}
+```{=html}
+<!-- an empty Div (with a white space), serving as
+a column separator -->
+```
+:::
+:::

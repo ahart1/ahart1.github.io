@@ -1,0 +1,7 @@
+---
+title: "Management Strategy Evaluation"
+---
+
+![](images/Research_MSE_Framework2.png)
+
+I regularly use Management Strategy Evaluation (MSE) in my research to help answer "what if" questions about fisheries management and to explore the consequences of system uncertainties. MSE frameworks use computer and statistical models to describe interactions between dynamic marine ecosystems and management systems. These models go by many names but generally fall into 2 broad categories: operating models and management procedures. Operating models describe the marine ecosystems that we manage and the fisheries that operate within these ecosystems. Management procedures encompass regulatory actions used to govern human interactions with marine ecosystems and generally include stock assessment models that track fish population size over time and harvest rules that regulate fishing to ensure sustainable harvests. MSE simulates the interaction between these two models to help understand the mid- and long-term impacts of different management decisions and fishing regulations, without risking the health of real-world fishery resources.

@@ -1,0 +1,13 @@
+---
+title: "Ecosystem-Based Fisheries Management"
+---
+
+**Testing Ecosystem-Based Fisheries Management (EBFM)**
+
+![](images/Research_EBFM_Overview.png "Ecosystem-Based Fisheries Management Overview"){width="80%" fig-align="center"}
+
+This project focused on testing combinations of EBFM methods to support development of operational EBFM in the Northeastern U.S. and to explore statistical methods that help interpret ecosystem management outcomes. This work is published in *Fisheries Research* and can be found [here](https://www.sciencedirect.com/science/article/abs/pii/S0165783619303212).
+
+##### Tackling technical interactions in EBFM
+
+In Management Strategy Evaluation (MSE) studies interactions between fishing fleets that fish for the same species and/or fish in the same geographic area have often been simplified or ignored when testing new management procedures. This is problematic when fisheries have existing conflicts due to fleet interactions and bycatch concerns, because the impact of new management procedures on these conflicts cannot be tested. This study seeks to estimate the strength of fleet interactions for a multi-species fishery in the Northeastern U.S. and integrate this information into an existing MSE framework to help test EBFM in this region.

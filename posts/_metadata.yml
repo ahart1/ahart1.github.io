@@ -1,0 +1,7 @@
+# Add footer
+format:
+  html:
+    include-after-body: ../blogfooter.html
+    
+# Freeze computational output
+freeze: true

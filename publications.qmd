@@ -1,0 +1,25 @@
+---
+title: "Publications"
+---
+
+## Journal publications
+
+<button onclick="window.location.href='https://scholar.google.com/citations?user=9Ea9PWwAAAAJ&hl=en&oi=sra';">
+      Google Scholar
+    </button>
+
+## Technical reports
+
+**Hart, A.R.**, Kerr, L., Miller, T.J. 2022. A state-space assessment of American plaice using the Woods Hole Assessment Model (WHAM). Working Paper for American plaice Research Track Stock Assessment. 
+
+NEFMC. 2018. Management Strategy Evaluation User Guide (Appendix V). In: NEFMC .2018. Amendment 8 to the Atlantic Herring Fishery Management Plan, including a Draft Environmental Impact Statement (DEIS). Volume II - Appendices. (Contributions by G.Fay and **A.R. Hart**). Prepared for the September 2018 meeting of the New England Fishery Management Council. 303p.
+
+Wildermuth, R., Cadrin, S., Fay, G., Cummings, J., Hansell, A., Haugen, J., **Hart, A.R.**, Morse, M., Wright, B. 2018. Technical Minutes of the Review Group for Arctic Fish Stocks (RGARWG) in Review of ICES Arctic Fisheries Working Group (AFWG) Report 2018.
+
+Deroba, J.J., Fay, G., Weston, A.E., **Hart, A.R.** 2018. A Stock Synthesis model for Atlantic herring. In: Deroba, J.J. 2018. Atlantic herring operational assessment report. 2018. US Department of Commerce, Northeast Fisheries Science Center. 22 pp.
+
+**Hart, A.R.**, Fay, G., Boelke, D. 2017. Draft impacts of Amendment 8 ABC control rule alternatives. Report to the September 2017 New England Fishery Management Council Atlantic Herring Advisory Panel and Herring Committee. 108 pp.
+
+Wright B., Cadrin, S.X., Fay, G., Calabrese, N., Hansell, A., **Hart, A.R.**, Horton, L., Rosellon-Druker, J., Weston, A.E., Wildermuth, R., Winton, M. 2017. Technical Minutes of the Review Group for Celtic Sea Stocks (RGCS). ICES CM 2017/ACOM:13.
+
+![](images/Ship_passing_Chittenden_Locks_Seattle.jpg "Crab boat passing throught the Chittenden Locks, Seattle Washington"){width="100%" fig-align="center"}

@@ -1,0 +1,23 @@
+---
+title: "Amanda R. Hart"
+title-block-banner: false
+---
+
+::: columns
+::: {.column width="25%"}
+![](images/AH_Headshot.jpg){width="270"}
+:::
+
+::: {.column width="5%"}
+  <!-- an empty Div (with a white space), serving as
+a column separator -->
+:::
+
+::: {.column width="70%"}
+I answer "what if" questions about fisheries management. It is important for fisheries managers to understand what happens if they make changes to the regulations that govern fishing, so I use computer and statistical models to safely test "what if" management scenarios to support their decision making. These methods help compare different management choices and can identify options that do not perform well, without risking the health of fishery resources.
+:::
+:::
+
+As a PhD candidate at the University of Massachusetts Dartmouth, my [research](research.qmd) focuses on evaluating management alternatives for fisheries in the Northeastern and Mid-Atlantic regions. In my position as a postdoctoral researcher at the Gulf of Maine Research Institute I am now focusing on developing and testing climate-integrated stock assessments. Through this work I endeavor to bring the results of quantitative fishery and ecosystem science to the public in a comprehensible format to support the sustainable management of marine resources.
+
+![](images/Home_Fig1.jpg "View of beach in Chatham, MA")
